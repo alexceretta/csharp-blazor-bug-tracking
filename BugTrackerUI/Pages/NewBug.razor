@@ -3,6 +3,9 @@
 <h3>Add New Bug</h3>
 
 <EditForm Model="AddBug" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
     <InputText placeholder="Enter Title" @bind-Value="@AddBug.Title"></InputText> 
 
     <InputText placeholder="Enter Description" @bind-Value="@AddBug.Description"></InputText>
